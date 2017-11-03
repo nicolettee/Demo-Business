@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Start Header */
+.container {
+  color: #bd940d;
+  background-color: #a71111;
+  /* red */
+  padding-bottom: 20px; }
+
+.header header {
+  background-image: url(../images/artDeco.jpg); }
+.header img {
+  float: left;
+  height: auto;
+  width: auto; }
+.header h1 {
+  color: #a71111;
+  margin: auto;
+  font-family: 'Courgette', cursive;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 4px #bd940d;
+  width: 70%; }
+.header nav ul {
+  background-color: #a71111;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.header nav li {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 25%; }
+.header nav a {
+  color: #fff;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+/*# sourceMappingURL=main.css.map */

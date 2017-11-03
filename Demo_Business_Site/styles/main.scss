@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$mainColor:#a71111;
+$secondColor:#fff;
+$accentColor: rgb(189, 148, 13);
+
+/* Start Header */
+
+.container {
+    color: $accentColor;
+    background-color: $mainColor;
+    /* red */
+    padding-bottom: 20px;
+}
+
+.header {
+    header {
+        background-image: url(../images/artDeco.jpg);
+    }
+    img{
+        float: left;
+        height: auto;
+        width: auto;
+    }
+    h1 {
+        color: $mainColor;
+        margin: auto;
+        font-family: 'Courgette', cursive;
+        font-size: 4rem;
+        text-align: center;
+        text-shadow: 2px 4px $accentColor;
+        width: 70%;
+    }
+    nav {
+        ul {
+            background-color: $mainColor;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around; 
+            width: 25%;
+        }
+        a {
+            color: $secondColor;
+            display: block;
+            padding: 6px 12px;
+            text-decoration: none;
+        }
+    }
+}
