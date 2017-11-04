@@ -4,17 +4,14 @@
     box-sizing: border-box;
 }
 
-$mainColor:#a71111;
+$mainColor:#a30000;
 $secondColor:#fff;
-$accentColor: rgb(189, 148, 13);
-
+$accentColor:#000;
+$prettyFont:'Courgette', cursive;
 /* Start Header */
 
 .container {
-    color: $accentColor;
-    background-color: $mainColor;
-    /* red */
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .header {
@@ -29,11 +26,11 @@ $accentColor: rgb(189, 148, 13);
     h1 {
         color: $mainColor;
         margin: auto;
-        font-family: 'Courgette', cursive;
+        font-family: $prettyFont;
         font-size: 4rem;
+        outline-color: #000;
         text-align: center;
         text-shadow: 2px 4px $accentColor;
-        width: 70%;
     }
     nav {
         ul {
@@ -45,7 +42,7 @@ $accentColor: rgb(189, 148, 13);
         }
         li {
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             justify-content: space-around; 
             width: 25%;
         }
@@ -55,5 +52,53 @@ $accentColor: rgb(189, 148, 13);
             padding: 6px 12px;
             text-decoration: none;
         }
+        .btn{
+            color: $secondColor;
+            display: block;
+            padding: 6px 12px;
+            text-decoration: none;
+        }
+    }
+}
+
+/* End Header */
+
+/* Start Body */
+main{
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5c164+0,e0deb3+66,f4f4e8+100 */
+    background: #e5c164; /* Old browsers */;background: -moz-linear-gradient(top, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e5c164 0%,#e0deb3 66%,#f4f4e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e5c164 0%,#e0deb3 66%,#f4f4e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    h1{
+        text-align: center;
+    }
+    span{
+        color: $mainColor;
+        font-family: $prettyFont;
+    }
+}
+@media screen and (max-width:700px){
+    .header {
+        text-align: left;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .image-gallery li{
+       width: 50%;
+    }
+    a,
+    nav li {
+       display: block;
+    }
+    nav li{
+        border: 1px solid #fff;
+        
+    }
+    nav ul{
+        padding: 0;
     }
 }

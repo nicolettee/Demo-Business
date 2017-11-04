@@ -5,10 +5,7 @@
 
 /* Start Header */
 .container {
-  color: #bd940d;
-  background-color: #a71111;
-  /* red */
-  padding-bottom: 20px; }
+  padding-bottom: 25px; }
 
 .header header {
   background-image: url(../images/artDeco.jpg); }
@@ -17,22 +14,22 @@
   height: auto;
   width: auto; }
 .header h1 {
-  color: #a71111;
+  color: #a30000;
   margin: auto;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   font-size: 4rem;
+  outline-color: #000;
   text-align: center;
-  text-shadow: 2px 4px #bd940d;
-  width: 70%; }
+  text-shadow: 2px 4px #000; }
 .header nav ul {
-  background-color: #a71111;
+  background-color: #a30000;
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none; }
 .header nav li {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-around;
   width: 25%; }
 .header nav a {
@@ -40,5 +37,46 @@
   display: block;
   padding: 6px 12px;
   text-decoration: none; }
+.header nav .btn {
+  color: #fff;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+/* End Header */
+/* Start Body */
+main {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5c164+0,e0deb3+66,f4f4e8+100 */
+  background: #e5c164;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  main h1 {
+    text-align: center; }
+  main span {
+    color: #a30000;
+    font-family: "Courgette", cursive; }
+
+@media screen and (max-width: 700px) {
+  .header {
+    text-align: left;
+    width: 100%; } }
+@media screen and (max-width: 480px) {
+  .image-gallery li {
+    width: 50%; }
+
+  a,
+  nav li {
+    display: block; }
+
+  nav li {
+    border: 1px solid #fff; }
+
+  nav ul {
+    padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */
