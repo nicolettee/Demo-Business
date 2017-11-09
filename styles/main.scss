@@ -36,9 +36,9 @@ $prettyFont:'Courgette', cursive;
         ul {
             background-color: $mainColor;
             display: flex;
+            list-style: none;
             margin: 0;
             padding: 0;
-            list-style: none;
         }
         li {
             display: flex;
@@ -78,30 +78,8 @@ main{
         font-family: $prettyFont;
     }
 }
-@media screen and (max-width:700px){
-    .header {
-        text-align: left;
-        width: 100%;
-    }
-    
-}
+/* End Body */
 
-@media screen and (max-width:480px){
-    .image-gallery li{
-       width: 50%;
-    }
-    a,
-    nav li {
-       display: block;
-    }
-    nav li{
-        border: 1px solid #fff;
-        
-    }
-    nav ul{
-        padding: 0;
-    }
-}
 /* Footer */
 .footer {
     position: relative;
@@ -138,4 +116,4 @@ main{
         }
     }
   }
-  
+ 
