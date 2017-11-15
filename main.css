@@ -1,23 +1,125 @@
-/*
-Errno::ENOENT: No such file or directory - main.scss
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-Backtrace:
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:454:in `read'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - main.scss"; }
+/* Start Header */
+.container {
+  padding-bottom: 25px; }
+
+.header header {
+  background-image: url(../images/artDeco.jpg); }
+.header img {
+  float: left;
+  height: auto;
+  width: auto; }
+.header h1 {
+  color: #a30000;
+  margin: auto;
+  font-family: "Courgette", cursive;
+  font-size: 4rem;
+  outline-color: #000;
+  text-align: center;
+  text-shadow: 2px 4px #000; }
+.header .topnav, .header .responsive {
+  background-color: #a30000;
+  clear: both;
+  overflow: hidden; }
+  .header .topnav ul, .header .responsive ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .header .topnav li, .header .responsive li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%; }
+  .header .topnav a, .header .responsive a {
+    float: left;
+    color: #fff;
+    display: block;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none; }
+  .header .topnav .btn, .header .responsive .btn {
+    color: #fff;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none; }
+  .header .topnav .icon, .header .responsive .icon {
+    display: none; }
+
+/* End Header */
+/* Start Body */
+main {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5c164+0,e0deb3+66,f4f4e8+100 */
+  background: #e5c164;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  main h1 {
+    text-align: center; }
+  main span {
+    color: #a30000;
+    font-family: "Courgette", cursive; }
+
+/* End Body */
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* Set the fixed height of the footer here */
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #f5f5f5; }
+  .footer nav ul {
+    background-color: #a30000;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .footer nav li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%; }
+  .footer nav a {
+    color: #fff;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none; }
+  .footer nav .btn {
+    color: #fff;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none; }
+
+@media screen and (max-width: 720px) {
+  .topnav li:not(:first-child) {
+    display: none; }
+
+  .topnav li .icon {
+    float: right;
+    display: block; } }
+@media screen and (max-width: 720px) {
+  .topnav .responsive {
+    position: relative; }
+
+  .topnav .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  .topnav .responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -12,6 +12,7 @@
 .header img {
   float: left;
   height: auto;
+  padding: 0;
   width: auto; }
 .header h1 {
   color: #a30000;
@@ -21,27 +22,8 @@
   outline-color: #000;
   text-align: center;
   text-shadow: 2px 4px #000; }
-.header nav ul {
-  background-color: #a30000;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-.header nav li {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 25%; }
-.header nav a {
-  color: #fff;
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
-.header nav .btn {
-  color: #fff;
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
+.header nav {
+  background-color: #a30000; }
 
 /* End Header */
 /* Start Body */
@@ -61,23 +43,7 @@ main {
     color: #a30000;
     font-family: "Courgette", cursive; }
 
-@media screen and (max-width: 700px) {
-  .header {
-    text-align: left;
-    width: 100%; } }
-@media screen and (max-width: 480px) {
-  .image-gallery li {
-    width: 50%; }
-
-  a,
-  nav li {
-    display: block; }
-
-  nav li {
-    border: 1px solid #fff; }
-
-  nav ul {
-    padding: 0; } }
+/* End Body */
 /* Footer */
 .footer {
   position: relative;
