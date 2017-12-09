@@ -56,6 +56,27 @@ main{
         color: $mainColor;
         font-family: $prettyFont;
     }
+   
+  
+}
+@media screen and (max-width:620px){
+    .card-title{
+        font-size:1em;
+    }
+    .card-text, .card-footer{
+        display: none;
+    }
+
+    .item{
+        height: 350px;
+        width: 200px;
+        & a{
+            height:auto;
+            width:100%;
+            overflow: hidden;
+        }
+    }
+    
 }
 /* End Body */
 
