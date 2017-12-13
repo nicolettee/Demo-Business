@@ -18,7 +18,6 @@ var productList2 = [{
 var filtered = productList2.filter(function (x) {
   return (x.product == 'Pants')
 });
-console.log(filtered);
 
 $(".btn-cart").on("click", function () {
   
@@ -26,21 +25,19 @@ $(".btn-cart").on("click", function () {
 
   if (myItems == null) {
     myItems = [];
+  }else{
+    myItems = myItems.split(',');
   }
+
   myItems.push($(this).data("itemid"));
-  console.log(myItems);
-  setCookie("items", myItems, 9999);
+  setCookie("items", myItems.join(','), 9999);
 
 });
 
 function setCookie(key,value,times){
   var date=new Date();
-  
-  console.log(date);
   date.setTime(date.getTime()+times*1000); 
-  console.log(date);
-  document.cookie=key+"="+value+";expires="+date+'; path=/';
-  console.log(document.cookie)            
+  document.cookie=key+"="+value+'; path=/';
 }
 
 function getCookie(key){
