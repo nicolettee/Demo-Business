@@ -7,18 +7,16 @@
 $mainColor:#a30000;
 $secondColor:#fff;
 $accentColor:#000;
-$prettyFont:'Courgette', cursive;
-/* Start Header */
+$prettyFont:'Courgette',
+cursive;
 
-.container {
-    padding-bottom: 25px;
-}
+/* Start Header */
 
 .header {
     header {
         background-image: url(../images/artDeco.jpg);
     }
-    img{
+    img {
         float: left;
         height: auto;
         padding: 0;
@@ -33,125 +31,190 @@ $prettyFont:'Courgette', cursive;
         text-align: center;
         text-shadow: 2px 4px $accentColor;
     }
-    nav{
+    nav {
         background-color: $mainColor;
     }
     
-    
 }
+
 
 /* End Header */
 
+
 /* Start Body */
-main{
-   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5c164+0,e0deb3+66,f4f4e8+100 */
-    background: #e5c164; /* Old browsers */;background: -moz-linear-gradient(top, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #e5c164 0%,#e0deb3 66%,#f4f4e8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #e5c164 0%,#e0deb3 66%,#f4f4e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
-    h1{
+
+main {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5c164+0,e0deb3+66,f4f4e8+100 */
+    background: #e5c164;
+    /* Old browsers */
+    ;
+    background: -moz-linear-gradient(top, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e5c164 0%, #e0deb3 66%, #f4f4e8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    h1 {
         text-align: center;
     }
-    span{
+    span {
         color: $mainColor;
         font-family: $prettyFont;
     }
-   
-  
-}
-@media screen and (max-width:620px){
-    .card-title{
-        font-size:1em;
+} //  Form
+form {
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
     }
-    .card-text, .card-footer{
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+    input[type=submit] {
+        background-color: $mainColor;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .card-title {
+        font-size: 1em;
+    }
+    .card-text {
         display: none;
     }
-
-    .item{
+    .item {
         height: 350px;
         width: 200px;
-        & a{
-            height:auto;
-            width:100%;
+        & a {
+            height: auto;
+            width: 100%;
             overflow: hidden;
         }
     }
-    
 }
+
+
 /* End Body */
 
+
 /* Footer */
-.footer-distributed{
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: normal 16px sans-serif;
 
-	padding: 45px 50px;
-	margin-top: 80px;
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 80px;
 }
 
-.footer-distributed .footer-left p{
-	color:  #8f9296;
-	font-size: 14px;
-	margin: 0;
+.footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
 }
+
 
 /* Footer links */
 
-.footer-distributed p.footer-links{
-	font-size:18px;
-	font-weight: bold;
-	color:  #ffffff;
-	margin: 0 0 10px;
-	padding: 0;
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
 }
 
-.footer-distributed p.footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
 }
 
-.footer-distributed .footer-right{
-	float: right;
-	margin-top: 6px;
-	max-width: 180px;
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
 }
 
-.footer-distributed .footer-right a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-left: 3px;
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
 }
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
 }
